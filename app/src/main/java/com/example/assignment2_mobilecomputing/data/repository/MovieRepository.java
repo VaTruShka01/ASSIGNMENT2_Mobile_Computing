@@ -5,7 +5,7 @@ import okhttp3.Callback;
 
 public class MovieRepository {
     private static final String API_KEY = "43c4487c";
-    private static final String BASE_URL = "https://www.omdbapi.com/?apikey=" + API_KEY;
+    private static final String BASE_URL = "https://www.omdbapi.com/?type=movie&apikey=" + API_KEY;
 
     public void getMovies(String searchTerm, Callback callback) {
         String url = BASE_URL + "&s=" + searchTerm;
